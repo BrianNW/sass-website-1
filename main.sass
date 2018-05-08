@@ -19,7 +19,16 @@ $brand-light:  #E6F2FF
   background-color:          $bg
   color:                     $color
 
-
+=btn-main($padding, $rad, $bg, $color)
+  padding:                   $padding
+  border-radius:             $rad
+  background-color:          $bg
+  color:                     $color
+  border-width: 0
+  border-style: none
+  cursor: pointer
+  display: block
+  margin: auto
 
 
 
@@ -46,3 +55,8 @@ section
 .thumb1
   +shaping(120px, 120px, 10%, $brand-dark, $brand-light)
   margin: 0 435px -90px
+
+
+.thumb2
+  +shaping(100px, 100px, 50%, $brand-sub, $brand-sub)
+  margin: -50px 1310px
