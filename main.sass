@@ -1,12 +1,12 @@
+// 1. Create variables
+// 2. Declare mixins
+// 3. Apply mixins to elements, classes and ids
+
 // VARIABLES
 $brand-main: #6600CC
 $brand-sub:  #CC66FF
 $brand-dark:  #333
 $brand-light:  #E6F2FF
-
-
-
-
 
 
 // MIXINS
@@ -29,6 +29,8 @@ $brand-light:  #E6F2FF
   cursor: pointer
   display: block
   margin: auto
+  &:hover
+    background-color: lighten($brand-main, 20%)
 
 
 
@@ -63,3 +65,9 @@ section
 
 .btn-1
   +btn-main(15px 20px, 7px, $brand-main, white)
+
+.btn-2
+  +btn-main(30px, 50%, $brand-dark, white)
+  font-size: 2rem
+  &:hover
+    background-color: darken($brand-main, 10%)
