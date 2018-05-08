@@ -40,4 +40,16 @@ section {
   margin: -50px 1310px;
 }
 
+.btn-1 {
+  padding: 15px 20px;
+  border-radius: 7px;
+  background-color: #6600CC;
+  color: white;
+  border-width: 0;
+  border-style: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+}
+
 /*# sourceMappingURL=styles.css.map */
